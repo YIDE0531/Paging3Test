@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/productDetailBrandItemProductAdapter_mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_ffffff"
+    android:paddingStart="@dimen/dp_22"
+    android:paddingEnd="@dimen/dp_22">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/productDetailBrandItemProductAdapter_productLeftConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/productDetailBrandItemProductAdapter_productRightConstraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/productDetailBrandItemProductAdapter_productLeftImageView"
+            android:layout_width="@dimen/dp_104"
+            android:layout_height="@dimen/dp_104"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_promotionNameLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_100"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingEnd="@dimen/dp_4"
+            android:paddingBottom="@dimen/dp_2"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_12"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@+id/productDetailBrandItemProductAdapter_unitLeftTextView"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/productDetailBrandItemProductAdapter_productLeftImageView"
+            tools:text="生日慶第2波" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_productLeftTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/color_494949"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productDetailBrandItemProductAdapter_productLeftImageView"
+            tools:text="北灣冰烤地瓜王素香甘藷" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_priceLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_ff8181"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/productDetailBrandItemProductAdapter_originalPriceLeftTextView"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productDetailBrandItemProductAdapter_productLeftTextView"
+            tools:text="$97" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_originalPriceLeftTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_b9b9b9"
+            android:textSize="@dimen/sp_12"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/productDetailBrandItemProductAdapter_addCartLeftImageView"
+            app:layout_constraintStart_toEndOf="@+id/productDetailBrandItemProductAdapter_priceLeftTextView"
+            tools:text="$97" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_unitLeftTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_12"
+            android:textColor="@color/color_494949"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@+id/productDetailBrandItemProductAdapter_promotionNameLeftTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/productDetailBrandItemProductAdapter_promotionNameLeftTextView"
+            tools:text="/1入" />
+
+        <ImageView
+            android:id="@+id/productDetailBrandItemProductAdapter_addCartLeftImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!--        <View-->
+        <!--            android:id="@+id/productDetailBrandItemProductAdapter_horizontalLeftView"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="@dimen/dp_1"-->
+        <!--            android:background="@color/color_e7e7e7"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/productDetailBrandItemProductAdapter_verticalLeftView"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_12"
+        android:background="@color/color_e7e7e7"
+        app:layout_constraintBottom_toBottomOf="@+id/productDetailBrandItemProductAdapter_productLeftConstraintLayout"
+        app:layout_constraintEnd_toStartOf="@+id/productDetailBrandItemProductAdapter_productRightConstraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/productDetailBrandItemProductAdapter_productLeftConstraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/productDetailBrandItemProductAdapter_productLeftConstraintLayout" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/productDetailBrandItemProductAdapter_productRightConstraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productDetailBrandItemProductAdapter_productLeftConstraintLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/productDetailBrandItemProductAdapter_productRightImageView"
+            android:layout_width="@dimen/dp_104"
+            android:layout_height="@dimen/dp_104"
+            android:layout_marginStart="@dimen/dp_31"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_promotionNameRightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_100"
+            android:layout_marginEnd="@dimen/dp_4"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingEnd="@dimen/dp_4"
+            android:paddingBottom="@dimen/dp_2"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/sp_12"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toStartOf="@+id/productDetailBrandItemProductAdapter_unitRightTextView"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/productDetailBrandItemProductAdapter_productRightImageView"
+            tools:text="生日慶第2波" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_productRightTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_24"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/color_494949"
+            android:textSize="@dimen/sp_14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productDetailBrandItemProductAdapter_productRightImageView"
+            tools:text="飛利浦厚片烤麵包機HD2582/92eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_priceRightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_ff8181"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/productDetailBrandItemProductAdapter_originalPriceRightTextView"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productDetailBrandItemProductAdapter_productRightTextView"
+            tools:text="$97" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_originalPriceRightTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:layout_marginBottom="@dimen/dp_14"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_b9b9b9"
+            android:textSize="@dimen/sp_12"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/productDetailBrandItemProductAdapter_addCartRightImageView"
+            app:layout_constraintStart_toEndOf="@+id/productDetailBrandItemProductAdapter_priceRightTextView"
+            tools:text="$97" />
+
+        <TextView
+            android:id="@+id/productDetailBrandItemProductAdapter_unitRightTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_494949"
+            android:textSize="@dimen/sp_12"
+            app:layout_constraintBottom_toBottomOf="@+id/productDetailBrandItemProductAdapter_promotionNameRightTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/productDetailBrandItemProductAdapter_promotionNameRightTextView"
+            tools:text="/1入" />
+
+        <ImageView
+            android:id="@+id/productDetailBrandItemProductAdapter_addCartRightImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:paddingStart="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/productDetailBrandItemProductAdapter_horizontalRightView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_e7e7e7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
